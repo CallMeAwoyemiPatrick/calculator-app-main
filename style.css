@@ -1,0 +1,74 @@
+*, *::before, *::after {
+      box-sizing: border-box;
+      font-family: spartan, sans-serif;
+      font-weight: normal;
+}
+
+body {
+      padding: 0;
+      margin: 0;
+      background: hsl(222, 26%, 31%);
+}
+
+.theme {
+      position: absolute;
+      left: 900px;
+}
+
+p {
+      color: aliceblue;
+}
+
+.grid {
+      padding: 10px;
+      display: grid;
+      justify-content: center;
+      align-content: center;
+      min-height: 100vh;
+      background-color: hsl(268, 71%, 12%);
+      grid-template-columns: repeat(4, 100px);
+      grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+.grid > button  {
+      cursor: pointer;
+      font-size: 2rem;
+      border: 1px solid rgb(175, 169, 169);
+      outline: none;
+}
+.grid > button:hover {
+      background-color: rgb(175, 172, 172);
+}
+
+.span-2 {
+      grid-column: span 2;
+}
+.output {
+      grid-column: 1 / -1;
+      background-color: hsl(222, 26%, 31%);
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-around;
+      flex-direction: column;
+      padding: 10px;
+      word-wrap: break-word;
+      word-break: break-all;
+}
+.output .p-operand {
+      color: rgb(221, 237, 250);
+      font-size: 1.5rem;
+}
+.output .c-operand {
+      color: aliceblue;
+      font-size: 1.5rem;
+}
+
+
+
+
+.attribution { 
+      font-size: 11px; text-align: center; 
+}
+.attribution a { 
+      color: hsl(228, 45%, 44%); 
+}
